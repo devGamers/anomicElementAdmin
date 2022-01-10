@@ -19,7 +19,7 @@ class Logs extends Model
             $this->titre = $data[1];
             $this->description = $data[2];
             $this->adminsId = $data[3];
-            $this->evenementsId = $data[4];
+            $this->evenementsId = isset($data[4]) ? $data[4] : null;
             $this->typeArtistesId = isset($data[5]) ? $data[5] : null;
             $this->artistesId = isset($data[6]) ? $data[6] : null;
             $this->galeriesId = isset($data[7]) ? $data[7] : null;
