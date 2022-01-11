@@ -39,7 +39,7 @@ class GalerieDAO extends DAO
 
     public function recherche($search)
     {
-        $search = explode('€', $_POST['search']);
+        $search = explode('€', $search);
         $id = $search[0];
         $type = $search[1];
 

@@ -1,5 +1,5 @@
 <!-- breadcrumb-area -->
-<section class="breadcrumb-area pb-70 pt-100 grey-bg" style="background-image:url(public/img/bg/bg-18.jpg)">
+<section class="breadcrumb-area pb-70 pt-100 grey-bg" style="background-image:url(/public/img/bg/bg-18.jpg)">
     <div class="container">
         <div class="row">
             <div class="col-xl-6 col-md-6 mb-30">

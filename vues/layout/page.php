@@ -6,25 +6,25 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" href="public/img/logo/logo80.jpg">
+    <link rel="icon" href="/public/img/logo/logo80.jpg">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="public/css/bootstrap.min.css">
-    <link rel="stylesheet" href="public/css/fontawesome.min.css">
-    <link rel="stylesheet" href="public/css/icofont.min.css">
-    <link rel="stylesheet" href="public/css/linearicons.css">
-    <link rel="stylesheet" href="public/css/slick.css">
-    <link rel="stylesheet" href="public/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="public/css/animate.min.css">
-    <link rel="stylesheet" href="public/css/magnific-popup.css">
-    <link rel="stylesheet" href="public/css/meanmenu.css">
-    <link rel="stylesheet" href="public/css/default.css">
-    <link rel="stylesheet" href="public/css/style.css">
-    <link rel="stylesheet" href="public/css/responsive.css">
+    <link rel="stylesheet" href="/public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/public/css/fontawesome.min.css">
+    <link rel="stylesheet" href="/public/css/icofont.min.css">
+    <link rel="stylesheet" href="/public/css/linearicons.css">
+    <link rel="stylesheet" href="/public/css/slick.css">
+    <link rel="stylesheet" href="/public/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/public/css/animate.min.css">
+    <link rel="stylesheet" href="/public/css/magnific-popup.css">
+    <link rel="stylesheet" href="/public/css/meanmenu.css">
+    <link rel="stylesheet" href="/public/css/default.css">
+    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="/public/css/responsive.css">
     <title>Anomic Element</title>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="public/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="/public/js/vendor/jquery-1.12.4.min.js"></script>
 </head>
 
 <body>
@@ -48,6 +48,7 @@
                 <div class="col-xl-6 col-lg-6 col-md-4 text-center text-md-right">
                     <div class="top-social-links">
                         <a href="https://www.facebook.com/anomicelements" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://soundcloud.com/anomicelements" target="_blank"><i class="fab fa-soundcloud"></i></a>
                     </div>
                 </div>
             </div>
@@ -59,7 +60,7 @@
                 <div class="col-xl-2 col-lg-2 col-md-3 col-sm-5">
                     <div class="logo">
                         <a href="/">
-                            <img src="public/img/logo/logo.png" class="img-fluid" alt="logo">
+                            <img src="/public/img/logo/logo.png" class="img-fluid" alt="logo">
                         </a>
                     </div>
                 </div>
@@ -93,6 +94,7 @@
                 </ul>
                 <div class="side-social">
                     <a href="https://www.facebook.com/anomicelements" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://soundcloud.com/anomicelements" target="_blank"><i class="fab fa-soundcloud"></i></a>
                 </div>
             </div>
             <div class="offcanvas-overly"></div>
@@ -139,14 +141,14 @@
         </div>
         <div class="footer-content pt-50 pb-30">
             <div class="footer-pattern">
-                <img src="public/img/footer/footer_map.png" alt="Anomic Element">
+                <img src="/public/img/footer/footer_map.png" alt="Anomic Element">
             </div>
             <div class="row">
                 <div class="col-xl-4 col-lg-4 mb-50">
                     <div class="footer-widget">
                         <div class="footer-logo">
                             <a href="/">
-                                <img src="public/img/logo/footer_logo.png" class="img-fluid" alt="Anomic Element">
+                                <img src="/public/img/logo/footer_logo.png" class="img-fluid" alt="Anomic Element">
                             </a>
                         </div>
                     </div>
@@ -195,7 +197,11 @@
                     <div class="footer-menu">
                         <ul>
                             <li>
-                                <a href="https://www.facebook.com/anomicelements" target="_blank">Facebook</a></li>
+                                <a href="https://www.facebook.com/anomicelements" target="_blank">Facebook</a>
+                            </li>
+                            <li>
+                                <a href="https://soundcloud.com/anomicelements" target="_blank">Soundcloud</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -205,18 +211,18 @@
 </footer>
 
 
-<script src="public/js/popper.min.js"></script>
-<script src="public/js/bootstrap.min.js"></script>
-<script src="public/js/slick.min.js"></script>
-<script src="public/js/isotope.pkgd.min.js"></script>
-<script src="public/js/imagesloaded.pkgd.min.js"></script>
-<script src="public/js/jquery.waypoints.min.js"></script>
-<script src="public/js/jquery.counterup.min.js"></script>
-<script src="public/js/owl.carousel.min.js"></script>
-<script src="public/js/jquery.meanmenu.min.js"></script>
-<script src="public/js/jquery.magnific-popup.min.js"></script>
-<script src="public/js/scrollup.min.js"></script>
-<script src="public/js/main.js"></script>
+<script src="/public/js/popper.min.js"></script>
+<script src="/public/js/bootstrap.min.js"></script>
+<script src="/public/js/slick.min.js"></script>
+<script src="/public/js/isotope.pkgd.min.js"></script>
+<script src="/public/js/imagesloaded.pkgd.min.js"></script>
+<script src="/public/js/jquery.waypoints.min.js"></script>
+<script src="/public/js/jquery.counterup.min.js"></script>
+<script src="/public/js/owl.carousel.min.js"></script>
+<script src="/public/js/jquery.meanmenu.min.js"></script>
+<script src="/public/js/jquery.magnific-popup.min.js"></script>
+<script src="/public/js/scrollup.min.js"></script>
+<script src="/public/js/main.js"></script>
 <script>
     function getXhr(){
         let xhr = null;

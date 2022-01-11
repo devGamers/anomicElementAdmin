@@ -4,7 +4,16 @@ class Artiste extends Controller
 {
 
     public function detail() {
-
+        $id = explode('|', $_GET['artiste']);
+        $id = self::decrypte($id[1], $id[0]);
+        $this->loadModel('Artistes', [$id, null, null, null, null, null]);
+        $this->loadDAO('ArtisteDAO', $this->Artistes);
+        $one = $this->ArtisteDAO->readOne();
+        $liens = json_decode($one['liens'], true);
+        $this->loadModel('Galeries', [null, null, $id, null]);
+        $this->loadDAO('GalerieDAO', $this->Galeries);
+        $galeries = $this->GalerieDAO->recherche($id.'€artiste');
+        $this->render('detail', 'page', compact('one', 'liens', 'galeries'));
     }
 
     public function typeArtiste() {
