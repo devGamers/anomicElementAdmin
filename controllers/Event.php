@@ -3,6 +3,20 @@
 class Event extends Controller
 {
 
+    public function detail() {
+        $id = explode('|', $_GET['event']);
+        $id = self::decrypte($id[1], $id[0]);
+        $this->loadModel('Evenements', [null, null, null, null, null, null, $id]);
+        $this->loadDAO('EvenementDAO', $this->Evenements);
+        $one = $this->EvenementDAO->readOne();
+        $events = $this->EvenementDAO->readAll();
+        $code = $this->code(170);
+        $this->loadModel('Galeries', [null, $id, null, null]);
+        $this->loadDAO('GalerieDAO', $this->Galeries);
+        $galeries = $this->GalerieDAO->recherche($id.'€event');
+        $this->render('detail', 'page', compact('one', 'galeries', 'events', 'code'));
+    }
+
     public function recherche() {
         $search = htmlspecialchars(strip_tags($_POST['search']));
         $this->loadModel('Evenements');
@@ -40,7 +54,6 @@ class Event extends Controller
         }
         echo $block;
     }
-
 
     public function index() {
         $this->loadModel('Evenements');

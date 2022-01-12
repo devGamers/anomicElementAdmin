@@ -171,7 +171,7 @@
                 <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
                     <div class="blog-wrapper home-blog-wrapper white-bg">
                         <div class="blog-thumb">
-                            <a href="/events/detail&event=<?= $code.'|'.Controller::crypte($event['id'], $code) ?>">
+                            <a href="/event/detail&event=<?= $code.'|'.Controller::crypte($event['id'], $code) ?>">
                                 <img src="<?= $event['image'] ?>" alt=""/>
                             </a>
                         </div>
@@ -188,12 +188,12 @@
                         </div>
                         <div class="blog-content home-blog">
                             <h2 class="blog-title">
-                                <a href="/events/detail&event=<?= $code.'|'.Controller::crypte($event['id'], $code) ?>"><?= substr($event['libelle'], 0, 30) ?>...</a>
+                                <a href="/event/detail&event=<?= $code.'|'.Controller::crypte($event['id'], $code) ?>"><?= substr($event['libelle'], 0, 30) ?>...</a>
                             </h2>
                             <p><?= substr($event['description'], 0, 80) ?>...</p>
                         </div>
                         <div class="link-box home-blog-link">
-                            <a href="/events/detail&event=<?= $code.'|'.Controller::crypte($event['id'], $code) ?>">Lire Plus</a>
+                            <a href="/event/detail&event=<?= $code.'|'.Controller::crypte($event['id'], $code) ?>">Lire Plus</a>
                         </div>
                     </div>
                 </div>

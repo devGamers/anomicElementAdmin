@@ -40,7 +40,7 @@
             </div>
             <div class="col-xl-8 col-lg-8 mb-30">
                 <div class="project-desc">
-                    <p class="text-justify"><?= $one['description'] ?></p>
+                    <p class="text-justify"><?= nl2br($one['description'] ) ?></p>
                 </div>
             </div>
         </div>
