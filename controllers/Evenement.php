@@ -161,7 +161,7 @@ class Evenement extends Controller
 
         //on enregistre les images encodé dans la base64 donc sous forme de chaine
 
-        $this->loadModel('Evenements', [$titre, $description, $_POST['img'], $date, $_SESSION['id'], $debut, $fin]);
+        $this->loadModel('Evenements', [$titre, $description, $_POST['img'], $date, $_SESSION['id'], $debut, $fin, null]);
         $this->loadDAO('EvenementDAO', $this->Evenements);
 
         $eventId = $this->EvenementDAO->ajouter();
