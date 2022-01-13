@@ -87,10 +87,10 @@
                                         </span>
                                     </a>
                                     <div class="dropdown-divider"></div>
-<!--                                        <a class="dropdown-item" href="#">-->
-<!--                                            <i class="ft-user"></i>-->
-<!--                                            Profil-->
-<!--                                        </a>-->
+                                        <a class="dropdown-item" href="/profil">
+                                            <i class="ft-user"></i>
+                                            Profil
+                                        </a>
                                     <div class="dropdown-divider"></div>
                                     <a class="dropdown-item" href="/connexion/deconnexion">
                                         <i class="ft-power"></i>
@@ -149,7 +149,7 @@
                     </a>
                     <ul class="menu-content">
                         <li id="menuType">
-                            <a class="menu-item" href="/typeArtiste">Type</a>
+                            <a class="menu-item" href="/typeartiste">Type</a>
                         </li>
                         <li id="menuListe">
                             <a class="menu-item" href="/artiste">Liste</a>

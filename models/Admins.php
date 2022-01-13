@@ -6,6 +6,7 @@ class Admins extends Model
     private $username;
     private $profil;
     private $showLogs;
+    private $manageUser;
 
     public function __construct($data = false)
     {
@@ -14,6 +15,8 @@ class Admins extends Model
             $this->username = $data[1];
             $this->profil = $data[2];
             $this->showLogs = $data[3];
+            $this->manageUser = $data[4];
+            $this->id = $data[5];
         }
         $this->table = "admins";
     }

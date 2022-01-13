@@ -15,6 +15,20 @@ class AdminDAO extends DAO
 
     }
 
+    public function getAdminInfoByUsernameOrName() {
+        try {
+            $connexion = $this->factory->getConnexion();
+            //$requete = $connexion->prepare("Select * from admins where username = :user or name=:name");
+            $requete = $connexion->prepare("Select * from admins where username = :user");
+            $requete->bindValue("user", $this->admin->getUsername());
+            //$requete->bindValue("name", $this->admin->getName());
+            $requete->execute();
+            return $requete->fetch();
+        }catch (Exception $exception) {
+            die("Erreur : " . $exception->getMessage());
+        }
+    }
+
     //envoi les données d'un admin en fonction de son username et du mot de passe
     public function getAdminInfoByUsernamePassword($password) {
         try {
@@ -36,12 +50,22 @@ class AdminDAO extends DAO
 
     public function ajouter()
     {
-        // TODO: Implement ajouter() method.
+
     }
 
     public function modifier()
     {
-        // TODO: Implement modifier() method.
+        try {
+            $connexion = $this->factory->getConnexion();
+            $requete = $connexion->prepare("update admins set username = :user, name=:name, profil =:img where id=:id");
+            $requete->bindValue("user", $this->admin->getUsername());
+            $requete->bindValue("name", $this->admin->getName());
+            $requete->bindValue("id", $this->admin->getId());
+            $requete->bindValue("img", $this->admin->getProfil());
+            return $requete->execute();
+        }catch (Exception $exception) {
+            die("Erreur : " . $exception->getMessage());
+        }
     }
 
     public function supprimer()

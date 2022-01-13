@@ -14,7 +14,7 @@ class Connexion extends Controller
         $username = htmlspecialchars(strip_tags($_POST['username']));
         $password = htmlspecialchars(strip_tags($_POST['password']));
         $password = md5(sha1($password));
-        $this->loadModel('Admins', ["", $username, "", ""]);
+        $this->loadModel('Admins', ["", $username, "", "", null, null]);
         $this->loadDAO('AdminDAO', $this->Admins);
         $requet =  $this->AdminDAO->getAdminInfoByUsernamePassword($password);
 
@@ -30,7 +30,7 @@ class Connexion extends Controller
                 $_SESSION['showLogs'] = $requet['showLogs'];
                 $_SESSION['manageUser'] = $requet['manageUser'];
                 $_SESSION['id'] = $requet['id'];
-                header('location:index.php');
+                header('location:/');
             }else{
                 $_SESSION['error'] = true;
                 $this->index();

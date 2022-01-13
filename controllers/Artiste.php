@@ -4,7 +4,7 @@ class Artiste extends Controller
 {
     public function modification() {
         $name = htmlspecialchars(strip_tags(trim($_POST['name'])));
-        $typeArtiste = $_POST['typeArtiste'];
+        $typeArtiste = $_POST['typeartiste'];
         $description = htmlspecialchars(strip_tags($_POST['description']));
         $img = $_POST['img'];
         $liens = isset($_POST['lien']) ? $_POST['lien'] : null;
@@ -122,7 +122,7 @@ class Artiste extends Controller
 
     public function enregistrement() {
         $name = htmlspecialchars(strip_tags(trim($_POST['name'])));
-        $typeArtiste = $_POST['typeArtiste'];
+        $typeArtiste = $_POST['typeartiste'];
         $description = htmlspecialchars(strip_tags($_POST['description']));
         $img = $_POST['img'];
         $liens = isset($_POST['lien']) ? $_POST['lien'] : null;

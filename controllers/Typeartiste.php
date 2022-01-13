@@ -1,6 +1,6 @@
 <?php
 
-class TypeArtiste extends Controller
+class Typeartiste extends Controller
 {
 
     public function modifier() {
@@ -41,7 +41,7 @@ class TypeArtiste extends Controller
             $block .= '<div class="col-md-4 col-12 alert round bg-gradient-directional-cyan alert-icon-left mb-2" role="alert">';
             $block .= '    <span class="alert-icon cursor-pointer" onclick="update('. $item['id'] .')"><i class="la la-pencil-square"></i></span>';
             if($this->ArtisteDAO->numberOfArtisteByType()['nbr'] == 0) {
-                $block .= '<button type="button" class="close" aria-label="Close" onclick="supprimer('. $item['id'] . ', \'/typeArtiste\')">';
+                $block .= '<button type="button" class="close" aria-label="Close" onclick="supprimer('. $item['id'] . ', \'/typeartiste\')">';
                 $block .= '    <span aria-hidden="true">&times;</span>';
                 $block .= '</button>';
             }
@@ -92,7 +92,7 @@ class TypeArtiste extends Controller
                 }
             }
         }
-        header('location:/typeArtiste');
+        header('location:/typeartiste');
     }
 
     public function index() {

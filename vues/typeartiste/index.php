@@ -71,7 +71,7 @@
                                         <?php $artiste->setTypeArtistesId($item['id']); ?>
 
                                         <?php if ($artiste->numberOfArtisteByType()['nbr'] == 0) : ?>
-                                            <button type="button" class="close" aria-label="Close"  onclick="supprimer('<?= $item['id'] ?>', '/typeArtiste')">
+                                            <button type="button" class="close" aria-label="Close"  onclick="supprimer('<?= $item['id'] ?>', '/typeartiste')">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
                                         <?php endif; ?>
@@ -115,7 +115,7 @@
             }
         }
 
-        xhr.open("POST","/typeArtiste/modifier", true);
+        xhr.open("POST","/typeartiste/modifier", true);
 
         // ne pas oublier ça pour le post
         xhr.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
