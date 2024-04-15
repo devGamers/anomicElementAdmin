@@ -60,6 +60,3 @@
             $controller->index();
         }
     }
-
-
-https://ci3.googleusercontent.com/meips/ADKq_Nbpf13pVUS027zx01qWXmK7W89VKeoPalowC9VtaB-Dr0_mUj2-ixs1efbd5fVp27hTAH65EFFK0bwf6vg-NyOjdrhIA4huMqnUjYFaNPbJ9e56YAly-PY=s0-d-e1-ft#https://storage.googleapis.com/vamos/extia/se_connecter_skills.png
