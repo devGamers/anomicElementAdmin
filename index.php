@@ -60,3 +60,6 @@
             $controller->index();
         }
     }
+
+
+https://www.google.com/url?q=https://www.meteojob.com/candidate/offers/candidateViewOffer.mj?mofferId%3D36731350%26my-meteo%3Dtrue%26auth%3DBd5S9DJ8xl0f6K3vOLLoXJJtjCCPKQm8N53kQYFIfAd2Y8R99xtiT_lsBNwXC_AA%26utm_source%3Dmailing%26utm_medium%3Demail%26utm_campaign%3DnewOfferAlert_HotOffer%26campaign%3DHOT_OFFER_20240411%26client%3D10593232%26cc_mail_id%3DHOT_OFFER_20240411%26cc_campaign%3DHOT_OFFER%26cc_variant%3DDEFAULT%26utm_content%3DlinkViewOffer&source=gmail&ust=1712913109159000&usg=AOvVaw1NLtJzXAuuQlZlz6tCTc4O
